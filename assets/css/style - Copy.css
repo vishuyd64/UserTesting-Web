@@ -1,0 +1,2598 @@
+@charset "utf-8";
+
+@import url('bootstrap.min.css');
+@import url('owl.carousel.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 13px;
+    color: #3a3a3a;
+    font-weight: 400;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clr,
+.clear {
+    clear: both;
+}
+
+header,
+footer,
+aside,
+article,
+section,
+detail,
+nav,
+figure {
+    position: relative; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none !important;
+    outline: none;
+}
+
+img {
+    border: 0;
+    outline: none;
+    max-width: 100%; 
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea,
+input[type="button"] {
+    max-width: 100%;
+}
+
+table {  width: 100%; }
+p { margin: 0; padding: 0; }
+.fltL { float: left; }
+.fltR { float: right; }
+.padding_none { padding: 0 !important;}
+.border_none{border:none !important}
+.navbar-toggle {  background-color: #fff !important; }
+.icon-bar { background-color: #000 !important; }
+.p_right0{ padding-right:0px !important }
+.p_left0{ padding-left:0px !important } 
+
+.Header {
+    width: 100%;
+    padding: 40px 20px 20px;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    left: 0;
+    right: 0;
+}
+
+.Header .navbar {
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    z-index: 99;
+    position: relative;
+    min-height: inherit;
+    max-width: 1350px;
+    margin: auto;
+}
+
+.Header .navbar .navbar-brand {
+    padding: 0;
+    height: auto;
+    margin-left: 0;
+    transition: 0.5s all ease-in-out;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3360f4;
+}
+
+.Header .navbar .navbar-brand span{
+    color: #ffffff;
+    background-color: #3360f4;
+    padding: 6px 20px;
+    border-radius: 50px;
+}
+
+.Header .navbar .navbar-brand img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.Header .navbar .Service-mobile {
+    display: none;
+}
+
+.Header .navbar .navbar-nav li {
+    margin: 0 0 0 40px;
+    position: relative;
+}
+
+.Header .navbar .navbar-nav li a {
+    color: #000000;
+    font-size: 16px;
+    background: transparent;
+    padding: 0 0;
+    position: relative;
+    text-transform: capitalize;
+    transition: all 0.5s ease-in-out;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+.Header .navbar .navbar-nav li a:hover {
+    color: #3360f4;
+}
+
+.Header .navbar .navbar-nav.navbar-right{
+    margin: -10px -15px 0 0;
+}
+
+.Header .navbar .navbar-nav.navbar-right li{
+    margin: 0 0 0 10px;
+}
+
+.Header .navbar .navbar-nav.navbar-right li a{
+    padding: 10px 25px;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #3360f4;
+}
+
+.Header .navbar .navbar-nav.navbar-right li a:hover{
+    background-color: #fff;
+    color: #3360f4;
+}
+
+.Header .navbar .navbar-nav.navbar-right li:first-child a{
+    background-color: #fff;
+    border: 1px solid #3360f4;
+    color: #3360f4;
+}
+
+.Header .navbar .navbar-nav.navbar-right li:first-child a:hover{
+    background-color: #3360f4;
+    color: #fff;
+}
+
+.Header-2 .navbar .navbar-brand {color: white;}
+
+.Header-2 .navbar .navbar-brand span{
+    background-color: #fff;
+    color: #2f5df4;
+}
+
+.Header-2 .navbar .navbar-nav li a{
+    color: #fff;
+}
+
+.Header-2 .navbar .navbar-nav li a:hover{
+    text-decoration: underline !important;
+    color: #fff;
+}
+
+.Header-3{
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0px -2px 10px #ddd;
+}
+
+.Header-3 .navbar .navbar-nav.navbar-right{
+    margin: 0px 0 0 0;
+}
+
+.Header-3 .navbar .navbar-nav.navbar-right li {margin: 0 0 0 40px;}
+.Header-3 .navbar .navbar-nav.navbar-right li a{
+    padding: 0;
+    color: #3360f4;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.Header-3 .navbar .navbar-nav.navbar-right li a:hover{
+    color: #000 !important;
+}
+
+
+
+
+
+
+
+
+ 
+.Fixed {
+    animation: 0.7s ease 0s normal none 1 running;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+    background: #c60000;
+    top: 0;
+    box-shadow: 0 1px 8px #999;
+    z-index: 99;
+    height: auto;
+    padding: 16px 0;
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%)
+    }
+    100% {
+        opacity: .9;
+        transform: translateY(0)
+    }
+}
+
+
+.SliderArea{
+    background-color: #f9fafd;
+    padding: 150px 0 50px 0;
+}
+
+.SliderArea .SliderLeft{}
+
+.SliderArea .SliderLeft h3{
+    font-size: 50px;
+    color: #000;
+    margin: 0 0 15px;
+    line-height: 66px;
+}
+
+.SliderArea .SliderLeft h4{
+    margin: 0 0 30px 0;
+    font-size: 29px;
+    color: #000;
+    font-weight: 400;
+    padding: 0 0 20px 0;
+    position: relative;
+}
+
+.SliderArea .SliderLeft h4:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+}
+
+.SliderArea .SliderLeft p{
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    line-height: 30px;
+    color: #000;
+}
+
+.SliderArea .SliderLeft ul{}
+
+.SliderArea .SliderLeft ul li{
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+
+.SliderArea .SliderLeft ul li a{
+    padding: 10px 30px;
+    display: block;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #3360f4;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.SliderArea .SliderLeft ul li a i{
+    margin: 0 0 0 10px;
+}
+
+.SliderArea .SliderLeft ul li:first-child a{
+    background-color: #3360f4;
+    color: #fff;
+}
+
+.SliderArea .SliderLeft ul li:first-child a:hover{
+    background-color: #fff;
+    color: #3360f4;
+}
+
+.SliderArea .SliderRight{
+    padding: 90px 0;
+    margin: 0 0 0 -50px;
+}
+
+.SliderArea .SliderRight img{
+    width: 100%;
+}
+
+
+.TestingArea{
+    padding: 60px 0 40px 0px;
+}
+
+.TestingArea .TestingLeft{
+    text-align: right;
+    padding: 0 50px 0 0;
+}
+
+.TestingArea .TestingLeft h3{
+    font-weight: 500;
+    padding: 0 0 30px 0;
+    position: relative;
+    font-size: 50px;
+    color: #000;
+    margin: 0 0 30px;
+    line-height: 66px;
+}
+
+.TestingArea .TestingLeft h3:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+}
+
+.TestingArea .TestingLeft p{
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    line-height: 33px;
+    color: #000;
+} 
+
+.TestingArea .TestingLeft ul li{
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+
+.TestingArea .TestingLeft ul li a{
+    padding: 10px 40px;
+    display: block;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #3360f4;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    background-color: #3360f4;
+    color: #fff;
+}
+
+.TestingArea .TestingLeft ul li a i{
+    margin: 0 0 0 10px;
+}
+
+.TestingArea .TestingLeft ul li a:hover{
+    background-color: #f9fafd;
+    color: #3360f4;
+}
+
+.TestingArea .TestingRight{
+    padding: 0 0 0 50px;
+}
+
+.TestingArea .TestingRight img{
+    width: 100%
+}
+
+
+.FastArea{
+    background-color: #f5f6fc;
+    padding: 50px 0;
+}
+
+.FastArea:before{
+    content: '';
+    background-image: url('../images/Circle.png');
+    position: absolute;
+    top: -150px;
+    height: 135%;
+    width: 530px;
+    background-size: cover;
+    left: -70px;
+}
+
+.FastArea .FastBox{
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+    min-height: 350px;
+    margin: 0 0 20px 0;
+}
+
+.FastArea .FastBox aside{
+    position: relative;
+    padding: 5px 0 30px 70px;
+    margin: 0 0 30px 0;
+}
+
+.FastArea .FastBox aside:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #cccccc;
+}
+
+.FastArea .FastBox aside figure{
+    position: absolute;
+    width: 45px;
+    top: 0;
+    left: 0;
+}
+
+.FastArea .FastBox aside figure img{
+    width: 100%
+}
+
+.FastArea .FastBox aside h3{
+    display: inline-block;
+    color: #000;
+    font-size: 36px;
+}
+
+.FastArea .FastBox aside a{
+    float: right;
+    color: #000;
+    font-size: 18px;
+}
+
+.FastArea .FastBox aside a i{
+    margin: 0 0 0 5px;
+}
+
+.FastArea .FastBox aside a:hover{
+    color: #3360f4;
+}
+
+.FastArea .FastBox p{
+    font-size: 16px;
+    line-height: 30px;
+    color: #404040;
+}
+
+.FastArea .FastBox p+p{
+    margin: 10px 0 0 0 
+}
+
+.FastArea .FastBox:hover{
+    box-shadow: 0px 3px 10px #ddd;
+    background-color: #fff;
+}
+
+.FastArea ul{
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.FastArea ul li{
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+
+.FastArea ul li a{
+    padding: 10px 40px;
+    display: block;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    background-color: #3360f4;
+    color: #fff;
+    border: 2px solid #3360f4;
+}
+
+.FastArea ul li a i{
+    margin: 0 0 0 10px;
+}
+
+.FastArea ul li a:hover{
+    background-color: #f9fafd;
+    color: #3360f4;
+}
+
+.KnowArea{
+    padding: 80px 0 30px 0;
+}
+
+.KnowArea .KnowLeft{
+    padding: 150px 0 50px 70px;
+}
+
+.KnowArea .KnowLeft h3{
+    font-size: 45px;
+    color: #000;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.KnowArea .KnowLeft p{
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    line-height: 33px;
+} 
+
+.KnowArea .KnowLeft a{
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    background-color: #3360f4;
+    color: #fff;
+    border: 2px solid #3360f4;
+}
+
+.KnowArea .KnowLeft a i{
+    margin: 0 0 0 10px;
+}
+
+.KnowArea .KnowLeft a:hover{
+    background-color: #f9fafd;
+    color: #3360f4;
+}
+
+.KnowArea .KnowRight{}
+
+.KnowArea .KnowRight img{
+    width: 100%
+}
+
+.TrustArea{padding:50px 0}
+.TrustArea h2{margin:0 0 10px 0;text-align:center;color:#000;font-size:35px}
+.TrustArea h3{margin:0;text-align:center}
+.TrustArea h3 span{font-size:17px;color:#7b7979;font-weight:400;letter-spacing:.5px;position:relative;text-transform: uppercase;}
+.TrustArea h3 span:before{content:'';position:absolute;width:40px;background-color: #3360f4;height:2px;left:-53px;top:0;bottom:0;margin:auto;}
+.TrustArea #TrustSlider{margin: 60px 0 0 0;}
+.TrustArea #TrustSlider:before{content: '';background-image: url('../images/quote.png');width: 150px;height: 120px;position: absolute;background-size: cover;top: 0;left: 160px;}
+.TrustArea #TrustSlider ol.carousel-indicators{bottom:0;margin:0;left:0;width:100%;text-align:center}
+.TrustArea #TrustSlider ol.carousel-indicators li{background-color:#ccc8c8;width:25px;height: 2px;border:none;margin:0;text-indent:0;}
+.TrustArea #TrustSlider ol.carousel-indicators li.active{background-color: #3360f4;}
+.TrustArea #TrustSlider .TrustBox{text-align:center;width:70%;margin:auto;position:relative;min-height: 240px;}
+.TrustArea #TrustSlider .TrustBox figure{width:130px;height:130px;border-radius:50%;overflow:hidden;border:1px dotted #f68026;padding:4px;margin:0 auto 20px}
+.TrustArea #TrustSlider .TrustBox figure img{width:100%;height:100%;border-radius:50%}
+.TrustArea #TrustSlider .TrustBox h5{margin: 40px 0 10px;font-size: 21px;color:#000;}
+.TrustArea #TrustSlider .TrustBox h6{margin:0 0 20px;font-size: 17px;color: #323232;font-weight: 400;font-family: Roboto;}
+.TrustArea #TrustSlider .TrustBox p{font-size: 17px;font-weight:400;line-height: 31px;color:#4c4a4a;}
+.TrustArea #TrustSlider .carousel-control{color: #3360f4;opacity:1;font-size:50px;text-shadow:none;top: 15%;background:transparent;width: 40px;height: 50px;line-height: 30px;}
+
+.SupportArea{background-image:url(../images/Support.png);background-size:cover;padding:0 0;position:relative;margin: 60px 0 0 0;}
+.SupportArea:before{content:'';background-color: #000;position:absolute;top:0;left:0;width:100%;height:100%;opacity:.7;}
+.SupportArea ul{margin:0;position:relative}
+.SupportArea ul li{width:calc(100%/4);float:left}
+.SupportArea ul li .SupportBox{padding:40px 0 40px 35px;transition:0.5s all ease-in-out}
+.SupportArea ul li .SupportBox figure{width:65px;height:65px;background-color:#fff;padding:10px;border-radius:5px;float:left}
+.SupportArea ul li .SupportBox figure img{ filter: brightness(0); opacity: 0.8; }
+.SupportArea ul li .SupportBox figcaption{float:left;color:#fff;padding:13px 0 13px 15px}
+.SupportArea ul li .SupportBox figcaption p{margin:0;font-size:16px;line-height:20px}
+.SupportArea ul li:first-child .SupportBox:hover{background-color: #3360f4cf;box-shadow:-7px 7px 8px #dedede;}
+.SupportArea ul li .SupportBox:hover{background-color: #3360f4cf;box-shadow:0 7px 8px #dedede;}
+
+
+.CheckArea{
+    padding: 0 0 50px 0;
+}
+
+.CheckArea .CheckBox{
+    background-color: #f5f6fc;
+    max-width: 860px;
+    margin: auto;
+    padding: 30px 100px;
+    border-radius: 10px;
+}
+
+.CheckArea .CheckBox h3{
+    text-align: center;
+    font-size: 33px;
+    color: #000;
+    margin: 0 0 10px 0;
+}
+
+.CheckArea .CheckBox p{
+    text-align: center;
+    font-size: 24px;
+    margin: 0 0 40px 0;
+    color: #616060;
+}
+
+.CheckArea .CheckBox aside{
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 3px 12px #ddd;
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 0 0 40px 0;
+}
+
+.CheckArea .CheckBox aside input{
+    height: 70px;
+    padding: 0 15px 0 40px;
+    font-size: 18px;
+    border: none;
+    box-shadow: none;
+    outline: 0;
+    width: 100%;
+}
+
+.CheckArea .CheckBox aside button,
+.CheckArea .CheckBox aside a{
+    border: none;
+    padding: 0;
+    width: 300px;
+    background-color: #3360f4;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 19px;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CheckArea .CheckBox aside a:hover{
+
+    background-color: #3360f4; 
+    color: #fff;
+}
+
+.CheckArea .CheckBox a{
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #3360f4;
+    color: #fff;
+    border: 2px solid #3360f4;
+}
+
+.CheckArea .CheckBox a img{
+    filter: brightness(0) invert(1);
+    width: 20px;
+    margin: 0 0 0 10px;
+}
+
+.CheckArea .CheckBox a:hover{
+    background-color: #fff;
+    color: #3360f4;
+}
+
+.CheckArea .CheckBox a:hover img{
+    filter: inherit;
+}
+
+.Footer{
+    background-color: #3c3c4b;
+    padding: 40px 0 30px;
+}
+
+.Footer .Foot{}
+
+.Footer .Foot h4{
+    padding: 0;
+    height: auto;
+    margin-left: 0;
+    transition: 0.5s all ease-in-out;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+}
+
+.Footer .Foot h4 span{
+    color: #3c3c4b;
+    background-color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin: 0 5px 0 0;
+}
+
+.Footer .Foot p{
+    color: #fff;
+    margin: 0 0 15px 0;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.Footer .Foot h3{
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+.Footer .Foot ul{}
+
+.Footer .Foot ul li{
+    margin: 0 0 10px 0;
+}
+
+.Footer .Foot ul li a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+} 
+
+.Footer .Foot ul li a:hover{}
+
+.Footer .Foot ol{
+    margin: 30px 0 0 0;
+}
+
+.Footer .Foot ol li{
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.Footer .Foot ol li a{
+    font-size: 14px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    line-height: 37px;
+}
+
+.Footer .Foot ol li a img{
+    width: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.Footer .Foot ol li a:hover{
+    background-color: #fff;
+    color: #3c3c4b;
+}
+
+.Footer .Foot ol li a:hover img{
+    filter: inherit;
+}
+
+
+.DemosArea{}
+ 
+.DemosArea .DemosImages{}
+
+.DemosArea .DemosImages img{
+    width: 100%;
+}
+
+.DemosArea .DemosContent{
+    margin: -100px 0 0 0;
+    padding: 0 0 50px 0;
+} 
+
+.DemosArea .DemosContent .DemosContentLeft iframe{
+    width: 100%;
+    height: 320px;
+}
+
+.DemosArea .DemosContent .DemosContentRight{
+    padding: 110px 0 0 0;
+}
+
+.DemosArea .DemosContent .DemosContentRight h3{
+    color: #000;
+    font-size: 34px;
+}
+
+.DemosArea .DemosContent .DemosContentRight p{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+.NewestArea{
+    padding: 50px 0 100px;
+}
+
+.NewestArea h3{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin: 0 0 20px 0;
+}
+
+.NewestArea p{
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-size: 20px;
+    color: #515050;
+    font-weight: 400;
+}
+
+.NewestArea figure{
+    width: 85%;
+    margin: auto;
+}
+
+.CustomerArea{
+    background-image: url(../images/customer.png);
+    padding: 300px 0 0 0;
+    background-size: cover;
+    margin: 0 0 50px 0;
+} 
+
+.CustomerArea .CustomerBox{
+    max-width: 700px;
+    margin-left: auto;
+}
+
+.CustomerArea .CustomerBox aside{
+    background-color: #fff;
+    padding: 70px 50px 70px 50px;
+    border-radius: 50px;
+}
+
+.CustomerArea .CustomerBox aside h3{
+    font-size: 35px;
+    line-height: 44px;
+    color: #000;
+    margin: 0 0 20px;
+}
+
+.CustomerArea .CustomerBox aside p{
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.FAQArea{
+    position: relative;
+    padding: 150px 0 0 0;
+}
+
+.FAQArea:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #3663f4;
+}
+
+.FAQArea .FAQHead{
+    margin: 0;
+}
+
+.FAQArea .FAQHead h1{
+    text-align: center;
+    padding: 0 0 30px 0;
+    border-bottom: 2px solid #ecf0fe;
+    color: #000;
+}
+
+.FAQArea .FAQBody{}
+
+.FAQArea .FAQBody .FAQBox{}
+
+.FAQArea .FAQBody .FAQBox aside{
+    margin: 40px 0 40px 0;
+}
+
+.FAQArea .FAQBody .FAQBox aside h3{font-size: 36px;}
+
+.FAQArea .FAQBody .FAQBox article{
+    background-color: #f8f9ff;
+    padding: 30px 0;
+}
+
+.FAQArea .FAQBody .FAQBox article figcaption{
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.FAQArea .FAQBody .FAQBox article figcaption:last-child{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.FAQArea .FAQBody .FAQBox article figcaption h3{
+    margin: 0 0 10px 0;
+    color: #000;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.FAQArea .FAQBody .FAQBox article figcaption h4{
+    margin: 30px 0 20px 0;
+    color: #000;
+    font-weight: 400;
+}
+
+.FAQArea .FAQBody .FAQBox article figcaption h4 strong{}
+
+.FAQArea .FAQBody .FAQBox article figcaption p{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+}
+
+.FAQArea .FAQBody .FAQBox article figcaption p a{}
+
+.FAQArea .FAQBody .FAQBox article figcaption ul{
+    padding: 0 0 0 20px;
+    list-style: disc;
+}
+
+.FAQArea .FAQBody .FAQBox article figcaption ul li{list-style: disc;font-size: 18px;margin: 0 0 11px 0;opacity: 0.8;color: #000;}
+
+.FAQArea .FAQBody .FAQBox article figcaption ul li:last-child{
+    margin: 0
+}
+
+
+.FAQArea .FAQBody .FAQUse{
+    text-align: center;
+    padding: 60px 0;
+}
+
+.FAQArea .FAQBody .FAQUse h3{
+    font-size: 35px;
+    margin: 0 0 25px 0;
+}
+
+.FAQArea .FAQBody .FAQUse a{
+    padding: 10px 30px 10px 70px;
+    display: inline-block;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    background-color: #3360f4;
+    min-width: 250px;
+    text-align: left;
+    border: 2px solid #3360f4;
+}
+
+.FAQArea .FAQBody .FAQUse a i{
+    margin: 0 0 0 30px;
+}       
+
+.FAQArea .FAQBody .FAQUse a:hover{
+    background-color: #fff;
+    color: #3360f4;
+}
+
+.BrandArea{
+    background-image: url('../images/Paid.png');
+    padding: 150px 0 250px;
+    position: relative;
+    background-size: cover;
+}
+
+.BrandArea:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000082;
+}
+
+.BrandArea .BrandBox{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.BrandArea .BrandBox h3{
+    font-size: 47px;
+    margin: 0 0 15px 0;
+}
+
+.BrandArea .BrandBox p{
+    font-size: 24px;
+    margin: 0 0 60px 0;
+}
+
+.BrandArea .BrandBox form{
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+    max-width: 600px;
+    margin: auto;
+}
+
+.BrandArea .BrandBox form input{
+    height: 60px;
+    padding: 0 15px 0 30px;
+    font-size: 18px;
+    border: none;
+    box-shadow: none;
+    outline: 0;
+    width: 100%;
+    color: black;
+}
+
+.BrandArea .BrandBox form button{
+    border: none;
+    padding: 0;
+    width: 250px;
+    background-color: #3360f4;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 19px;
+    outline: 0;
+}
+
+
+
+.WorkArea{
+    padding: 0 0 60px 0;
+}
+
+.WorkArea .WorkBox{
+    margin: -126px 0 0 0;
+    background-color: #fff;
+    padding: 60px;
+    box-shadow: 0px 2px 6px #ddd;
+}
+
+.WorkArea .WorkBox h3{
+    text-align: center;
+    margin: 0 0 50px 0;
+    font-size: 50px;
+    color: #000;
+}
+
+.WorkArea .WorkBox iframe{
+    max-width: 900px;
+    height: 510px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.WorkArea .WorkBox h4{
+    text-align: center;
+    font-size: 22px;
+    line-height: 37px;
+    margin: 0 0 50px 0;
+}
+
+.WorkArea .WorkBox ul{
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+
+.WorkArea .WorkBox ul li{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    position: relative;
+}
+
+.WorkArea .WorkBox ul li+li:before{
+    content: '';
+    background-image: url('../images/work-arrow.png');
+    position: absolute;
+    top: 40px;
+    left: -60px;
+    width: 90px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.WorkArea .WorkBox ul li:last-child:before{
+    background-image: url('../images/work-arrow-2.png');
+    top: 20px;
+}
+
+.WorkArea .WorkBox ul li figure{
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 50px;
+}
+
+.WorkArea .WorkBox ul li figure img{
+    width: 100%
+}
+
+.WorkArea .WorkBox ul li h5{
+    font-size: 20px;
+    margin: 0 0 15px;
+    color: #000;
+}
+
+.WorkArea .WorkBox ul li p{
+    font-size: 15px;
+    line-height: 23px;
+    color: #696969;
+}
+
+.WorkArea .WorkHeard{
+    text-align: center;
+    margin: 60px 0 0 0;
+}
+
+.WorkArea .WorkHeard h3{
+    font-size: 40px;
+    margin: 0 0 15px 0;
+}
+
+.WorkArea .WorkHeard p{
+    font-size: 17px;
+    line-height: 30px;
+    color: #696969;
+}
+
+
+.ParticipatingArea{
+    background-color: #f5f6fc;
+    padding: 50px 0;
+}
+
+.ParticipatingArea h1{
+    text-align: center;
+    margin: 0 0 10px 0;
+    color: #000;
+    font-size: 40px;
+}
+
+.ParticipatingArea h2{
+    font-size: 17px;
+    line-height: 30px;
+    color: #696969;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 0 60px 0;
+}
+
+.ParticipatingArea .ParticipatingBox{
+    box-shadow: 0px 3px 10px #ddd;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    margin: 0 0 30px 0;
+}
+
+.ParticipatingArea .ParticipatingBox:before{
+    content: '';
+    background-image: url('../images/quote.png');
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 170px;
+    height: 140px;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.ParticipatingArea .ParticipatingBox p{
+    font-size: 18px;
+    line-height: 37px;
+    color: #696969;
+    margin: 0 0 20px 0;
+}
+
+.ParticipatingArea .ParticipatingBox h3{
+    color: #000;
+    margin: 0 0 10px;
+}
+
+.ParticipatingArea .ParticipatingBox h4{
+    font-weight: 400;
+    font-size: 18px;
+}
+ 
+.AboutArea{
+    position: relative;
+    padding: 150px 0 60px 0;
+}
+
+.AboutArea:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #3663f4;
+}
+
+.AboutArea .AboutBox{
+    text-align: center;
+    width: 100%;
+    max-width: 860px;
+    margin: auto;
+}
+
+.AboutArea .AboutBox iframe{
+    max-width: 675px;
+    height: 380px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 0 40px;
+}
+
+.AboutArea .AboutBox h3{
+    font-size: 45px;
+    color: #000;
+    margin: 0 0 30px 0;
+}
+
+.AboutArea .AboutBox h4{
+    color: #000;
+    opacity: 0.7;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0 0 20px 0;
+}
+
+.AboutArea .AboutBox p{
+    font-size: 18px;
+    line-height: 38px;
+    margin: 0 0 30px 0;
+    color: #000;
+}
+
+.AboutArea .AboutBox h5{
+    text-align: left;
+    font-size: 21px;
+    color: #000;
+}
+
+.faqarea{
+    padding: 50px 0;
+}
+
+.faqarea .panel-group h1{
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: #000;
+}
+
+.faqarea .panel-group .panel{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.faqarea .panel-group .panel+.panel{
+    margin: 40px 0 0 0;
+}
+
+.faqarea .panel-group .panel .panel-heading{
+    cursor: pointer;
+    padding: 0 0 20px 0;
+}
+
+.faqarea .panel-group .panel .panel-heading span{
+    float: right;
+}
+
+.faqarea .panel-group .panel .panel-heading h4{
+    font-family: Roboto;
+    text-transform: capitalize;
+    color: #616161;
+    font-weight: 500;
+    font-size: 20px;
+} 
+
+.faqarea .panel-group .panel .panel-body{
+    padding: 15px 0px;
+}
+
+.faqarea .panel-group .panel .panel-body p{
+    font-size: 17px;
+    line-height: 30px;
+    font-family: Roboto;
+    margin: 0 0 10px 0;
+}
+
+.faqarea .panel-group .panel .panel-body ol{
+    padding: 0 0 0 20px;
+}
+
+.faqarea .panel-group .panel .panel-body ol li{
+    font-size: 17px;
+    line-height: 38px;
+    font-family: Roboto;
+    list-style: disc;
+}
+
+.ProductArea{
+    position: relative;
+    background-image: url('../images/product.png');
+    padding: 150px 0 90px 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ 
+.ProductArea aside{
+    text-align: center;
+    margin: 0 0 100px 0;
+}
+
+.ProductArea aside h3{
+    font-size: 38px;
+    color: #fff;
+    margin: 0 0 10px;
+}
+
+.ProductArea aside h4{
+    font-size: 21px;
+    line-height: 33px;
+    color: #fff;
+    margin: 0 0 50px;
+    font-weight: 400;
+}
+
+.ProductArea aside iframe{
+    height: 445px;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ProductArea article{
+    text-align: center;
+}
+
+.ProductArea article h3{
+    font-size: 35px;
+    color: #000;
+    margin: 0 0 10px;
+}
+
+.ProductArea article p{
+    font-size: 19px;
+    line-height: 35px;
+    margin: 0 0 60px 0;
+}
+
+.ProductArea article img{
+    width: 90%;
+}
+
+
+.WorksArea{ background-color: #f5f6fc; padding: 75px 0; }
+.WorksArea h1{ text-align: center; color: #3360f4; font-size: 30px; padding: 0 0 10px 0; margin: 0 0 15px 0px; position: relative; }
+.WorksArea h1:after{content: '';position: absolute;bottom: 0;left: 0;right: 0;width: 70px;height: 2px;background-color: #000;margin: auto;}
+.WorksArea h2{ text-align: center; margin: 0 0 50px 0; font-size: 16px; font-weight: 400; }
+.WorksArea .WorkLeft{ overflow-x: hidden} 
+.WorksArea .WorkLeft ul li{position:relative;padding:0 0 30px 0}
+.WorksArea .WorkLeft ul li:before{content:'';background-color: #d5defb;position:absolute;width:10px;min-height:300px;left: 80px;top:10px;}
+.WorksArea .WorkLeft ul li:last-child:before{content:none} 
+.WorksArea .WorkLeft ul li .StepBox{width: 100%;float:left;padding:50px 0 0 160px;position:relative;}
+.WorksArea .WorkLeft ul li .StepBox aside{border: 1px dotted #cacaca;padding:5px;border-radius:50%;width:160px;height:160px;position:absolute;left:0;top:0;}
+.WorksArea .WorkLeft ul li .StepBox aside figure{width:100%;height:100%;background-color: #ffffff;border-radius:50%;border: 10px solid #d5defb;display:flex;align-items:center;justify-content:center;position:relative;z-index:1;}
+.WorksArea .WorkLeft ul li .StepBox aside figure img{filter: brightness(0);width:73px;}
+.WorksArea .WorkLeft ul li .StepBox article{margin:0 0 20px -15px}
+.WorksArea .WorkLeft ul li .StepBox article span{background-color: #d5defb;color:#fff;padding:13px 0;display:inline-block;border-radius:0 20px 20px 0;font-size:23px;letter-spacing:1px;font-weight:400;min-width:170px;text-align:center;}
+.WorksArea .WorkLeft ul li .StepBox h4{margin:0 0 10px;text-transform: capitalize;color: #110729;font-size: 18px;font-weight: 600;}
+.WorksArea .WorkLeft ul li .StepBox p{font-size:15px;line-height:25px}
+.WorksArea .WorkLeft ul li:nth-child(1):before{ background-color: #2152f3; }
+.WorksArea .WorkLeft ul li:nth-child(1) .StepBox aside{ border-color: #808080; }
+.WorksArea .WorkLeft ul li:nth-child(1) .StepBox aside figure{ border-color: #2152f3; }
+.WorksArea .WorkLeft ul li:nth-child(1) .StepBox article span{ background-color: #2152f3; }
+.WorksArea .WorkRigt{ padding: 130px 0 20px; }
+.WorksArea .WorkRigt img{ width: 100%; }
+
+
+
+
+ 
+.TestingArea.Watch .TestingLeft h3{
+    padding: 0;
+}
+
+.TestingArea.Watch .TestingLeft h3:after{
+    content: none;
+}
+
+.TestingArea.Watch .TestingLeft p{ opacity: 0.8 }
+
+.TestingArea.Watch .TestingLeft a.LearnAbout{
+    font-size: 17px;
+}
+
+.TestingArea.Watch .TestingLeft a.LearnAbout img{
+    margin: 0 0 0 10px;
+    width: 25px;
+}
+
+
+
+.ParticipantsArea{
+    padding: 0 0 80px 0;
+}
+
+.ParticipantsArea .ParticipantBox{
+    max-width: 800px;
+    margin: auto;
+    padding: 0px 0px 0px 120px;
+    position: relative;
+}
+
+.ParticipantsArea .ParticipantBox figure{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #b2c1f7;
+    border: 9px solid #d5defb;
+    bottom: 0;
+    margin: auto;
+}
+
+.ParticipantsArea .ParticipantBox h3{
+    font-weight: 500;
+    position: relative;
+    font-size: 35px;
+    color: #000;
+    margin: 0 0 20px;
+    font-weight: 400;
+}
+
+.ParticipantsArea .ParticipantBox p{
+    font-size: 19px;
+    line-height: 35px;
+    margin: 0 0 20px 0;
+}
+
+.ParticipantsArea .ParticipantBox a{
+    font-size: 17px;
+}
+
+.ParticipantsArea .ParticipantBox a img{
+    width: 25px;
+    margin: 0 0 0 10px;
+}
+
+
+
+.PricingArea{
+    background-color: #f5f6fc;
+    background-image: url('../images/Pricing.png');
+    padding: 150px 0 50px 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
+
+.PricingArea h1{
+    text-align: center;
+    color: #fff;
+    margin: 0 0 50px 0;
+}
+
+.PricingArea aside{
+    background-color: #fff;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    box-shadow: 0px 10px 10px #ddd;
+    border-radius: 50px;
+    padding: 60px 30px 30px 30px;
+}
+
+.PricingArea aside h3{
+    text-align: center;
+    font-size: 50px;
+}
+
+.PricingArea aside h3 span{
+    font-size: 25px;
+    margin: 0 -7px 0 0;
+}
+
+.PricingArea aside h4{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+    color: #828282;
+    font-weight: 400;
+    border-bottom: 2px solid #6686ef4a;
+    padding: 0 0 20px 0;
+}
+
+.PricingArea aside ul{
+    margin: 0 0 30px 0;
+}
+
+.PricingArea aside ul li{
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #6d6d6d;
+}
+
+.PricingArea aside ul li:last-child{
+    border: none;
+}
+
+.PricingArea aside ul li span{
+    width: 80%;
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    padding: 17px 0;
+    margin: 0 20px 0 0;
+}
+
+.PricingArea aside button{
+    border: none;
+    outline: 0;
+    background-color: #416af2;
+    width: 200px;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 15px;
+    margin: 0 auto 0px;
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+}
+
+
+
+.AnnulArea{
+    padding: 40px 0;
+}
+
+.AnnulArea h2{
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 33px;
+    color: #000;
+}
+
+.AnnulArea ul{
+    max-width: 610px;
+    margin: auto;
+}
+
+.AnnulArea ul li{
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #6d6d6d;
+}
+
+.AnnulArea ul li:last-child{
+}
+
+.AnnulArea ul li span.Icon{
+    display: inline-block;
+    width: 20px;
+    margin: 0 7px 0 -20px;
+}
+
+.AnnulArea ul li span.Text{
+    width: 80%;
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    padding: 17px 0;
+    margin: 0 20px 0 0;
+}
+
+.AnnulArea ul li strong{
+    color: #000;
+    font-weight: 600;
+}
+
+.FAQPricing{
+    padding: 40px 0 50px 0;
+}
+
+.FAQPricing h2{
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-size: 45px;
+    color: #000;
+}
+
+.FAQPricing .FAQPricingBox{}
+
+.FAQPricing .FAQPricingBox aside{
+    margin: 0 0 20px 0;
+}
+
+.FAQPricing .FAQPricingBox aside h4{
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 5px 0;
+}
+
+.FAQPricing .FAQPricingBox aside p{
+    font-size: 15px;
+    line-height: 27px;
+    color: #000;
+    opacity: 0.7;
+    margin: 0 0 10px 0;
+}
+
+.NewsArea{
+    padding: 0 0 40px 0;
+}
+
+.NewsArea .NewsHead{
+    background-color: #f5f6fc;
+    background-image: url('../images/News.png');
+    padding: 170px 0 60px 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.NewsArea .NewsHead h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+} 
+.NewsArea .NewsBody .NewsBox{
+    background-color: #f5f6fc;
+    padding: 50px 0;
+    margin: 0 0 15px 0;
+    min-height: 200px;
+}
+
+.NewsArea .NewsBody .NewsBox h4{
+    color: #000;
+    margin: 0 0 10px 0;
+}
+
+.NewsArea .NewsBody .NewsBox ul{
+    padding: 0 0 0 20px;
+}
+
+.NewsArea .NewsBody .NewsBox ul li{
+    font-size: 17px;
+    line-height: 29px;
+    color: #000;
+    font-weight: 300;
+    list-style: disc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************** DashBoard ******************************* */
+
+
+
+
+.LoginArea{background-color:#f6fbfd;display:flex;align-items:center;justify-content:center;min-height:100vh}
+.LoginArea .LoginBox{display:flex;border-radius:25px;overflow:hidden;max-width:800px;width:100%;background-color:#466ff2;box-shadow:0 1px 10px #ddd}
+.LoginArea .LoginBox aside{background-color:#466ff2;padding:20px 20px;width:40%;max-width:500px;display:flex;align-items:center;justify-content:center}
+.LoginArea .LoginBox aside img{width:120px;opacity:.5;filter:grayscale(1)}
+.LoginArea .LoginBox article{width:60%;background-color:#fff;border-radius:25px;padding:50px 45px;margin:0 0 0 0}
+.LoginArea .LoginBox article h3{text-align:center;color:#466ff2;font-size:27px;margin:0 0 10px 0}
+.LoginArea .LoginBox article h4{color:#466ff2;text-align:center;margin:0 0 50px 0;font-weight:400}
+.LoginArea .LoginBox article .form-group .form-control{padding:0;border:none;box-shadow:none;border-bottom:1px solid #ddd;border-radius:0}
+.LoginArea .LoginBox article .form-group a{font-size:16px;color:#466ff2;font-weight:400}
+.LoginArea .LoginBox article .form-group a:hover{color:#000}
+.LoginArea .LoginBox article p{font-size: 13px;color: #000;font-weight: 500;opacity: 0.5;}
+.LoginArea .LoginBox article button,
+a.Login{width:100%;background:#466ff2;border:none;padding:10px 0;color:#fff;font-size: 19px;margin:20px 0 0 0;border-radius: 7px; display: block; text-align: center;}
+.LoginArea .LoginBox article button:hover,
+a.Login:hover{ background-color: #000; }
+.LoginArea .LoginBox article h6{display:flex;align-items:center;font-size:16px;color:#466ff2;font-weight:400;margin:20px 0 0 0}
+
+.switch{position:relative;display:inline-block;width:55px;height:28px;margin:0 0 0 20px}
+.switch input{opacity:0;width:0;height:0}
+.switch .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:0.4s;transition:0.4s}
+.switch .slider:before{position:absolute;content:"";height:30px;width:30px;left:0;bottom:0;background-color:#fff;-webkit-transition:0.4s;transition:0.4s;box-shadow:0 3px 4px #ddd}
+.switch input:checked+.slider{background-color:#4cd564}
+.switch input:focus+.slider{box-shadow:0 0 1px #2196f3}
+.switch input:checked+.slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px)}
+.slider.round{border-radius:34px}
+.slider.round:before{border-radius:50%}
+
+
+.DashboardMainArea{position:relative;padding:150px 0 60px 0}
+.DashboardMainArea:before{content:'';position:absolute;top:0;left:0;width:100%;height:100px;background-color:#3663f4}
+.DashboardMainArea aside{margin:0 0 50px 0}
+.DashboardMainArea aside h1{text-align:center;margin:0 0 30px 0;color:#000}
+.DashboardMainArea aside p{text-align:center;font-size:24px;line-height:36px;margin:0 0 50px 0;color:#000;opacity:.6}
+.DashboardMainArea aside img{width:100%}
+.DashboardMainArea article ul.nav-tabs{border:1px solid #ddd;border-radius:6px;overflow:hidden;width:662px;margin:0 auto 50px}
+.DashboardMainArea article ul.nav-tabs li{float:left;margin:0;display:inline-block}
+.DashboardMainArea article ul.nav-tabs li+li:before{content:'';width:1px;height:60%;position:absolute;top:0;bottom:0;margin:auto;background-color:#d8d8d8}
+.DashboardMainArea article ul.nav-tabs li a{margin:0;border-radius:0;min-width:220px;text-align:center;color:#000;font-size:17px;opacity:.5;padding:14px 0;border:none!important}
+.DashboardMainArea article ul.nav-tabs li a:hover{background-color:transparent;color:#000;opacity:1}
+.DashboardMainArea article ul.nav-tabs li.active a{background-color:#466ef2;color:#fff;opacity:1}
+.DashboardMainArea article .tab-content h4{font-size:16px;font-weight:400;line-height:31px;text-align:center;margin:0 0 50px 0;color:#000}
+.DashboardMainArea article .tab-content iframe{max-width:800px;height:450px;width:100%;border-radius:15px;margin:auto;display:block}
+.DashboardMainArea article .tab-content .carousel-control{background:no-repeat;width:60px;height:60px;border:2px solid #ddd;border-radius:50%;bottom:0;top:0;margin:auto;box-shadow:none;opacity:1;text-shadow:none;color:#ddd;font-size:30px;line-height:55px}
+.DashboardMainArea article .tab-content .carousel-control:hover{border-color:#466ef2;color:#466ef2}
+.DashboardMainArea article .tab-content #Projects .ProjectBox,
+.DashboardMainArea article .tab-content #Notifications .ProjectBox{max-width:750px;background-color:#f5f7fe;padding:30px;margin:auto}
+.DashboardMainArea article .tab-content #Projects .ProjectBox aside{padding:20px 30px;background-color:#fff;min-height:180px;box-shadow:0 2px 7px #ddd;margin:0 0 20px}
+.DashboardMainArea article .tab-content #Projects .ProjectBox aside h4{color:#000;text-align:left;font-size:20px;font-weight:500;margin:0 0 10px 0}
+.DashboardMainArea article .tab-content #Projects .ProjectBox aside a{display:block;background-color:#ecf0fe;text-align:center;border-radius:12px;padding:8px 0;font-size:13px;color:#456ef2}
+.DashboardMainArea article .tab-content #Projects .ProjectBox aside a:hover{background-color:#456ef2;color:#fff}
+.DashboardMainArea article .tab-content #Notifications .ProjectBox{padding:45px}
+.DashboardMainArea article .tab-content #Notifications .ProjectBox figure{text-align:right;margin:-20px -30px 20px 0}
+.DashboardMainArea article .tab-content #Notifications .ProjectBox figure img{width:25px}
+.DashboardMainArea article .tab-content #Notifications .ProjectBox .Notification{padding:13px 15px 25px;background-color:#fff;margin:0 0 20px 0;border-radius:10px 0 10px 10px;box-shadow:0 2px 11px #ddd}
+.DashboardMainArea article .tab-content #Notifications .ProjectBox .Notification:last-child{margin:0}
+.DashboardMainArea article .tab-content #Notifications .ProjectBox .Notification p{text-align:right}
+.DashboardMainArea article .tab-content #Notifications .ProjectBox .Notification p span{width:10px;height:10px;display:inline-block;background-color:#466ef2;border-radius:50%}
+.DashboardMainArea article .tab-content #Notifications .ProjectBox .Notification h6{font-size:18px;font-weight:400;line-height:26px}
+
+.SelftestArea{background-color:#f5f6fc;padding:100px;margin:0 0 70px 0}
+.SelftestArea .SelftestBox{background-color:#fff;max-width:700px;margin:auto;padding:40px 40px 50px;border-radius:10px}
+.SelftestArea .SelftestBox aside{position:relative;padding:5px 0 20px 50px;margin:0 0 30px 0}
+.SelftestArea .SelftestBox aside:after{content:'';position:absolute;bottom:0;left:0;width:40px;height:3px;background-color:#ccc}
+.SelftestArea .SelftestBox aside figure{position:absolute;width:24px;top:0;left:0}
+.SelftestArea .SelftestBox p{font-size:17px;line-height:30px;margin:0 0 20px 0}
+.SelftestArea .SelftestBox a{font-size:17px;color:#3a64f4;text-decoration:underline}
+
+
+.Dashboard .Header{background-color:#456ef2;padding: 20px 30px;text-align:center;position:fixed;}
+.Dashboard .Header .HeaderLeft{float:left;margin:7px 0}
+.Dashboard .Header .HeaderLeft ul li{display:inline-block;margin:0 30px 0 0}
+.Dashboard .Header .HeaderLeft ul li a{color:#fff;font-size:16px;border-bottom:2px solid #fff0;border-radius:5px;padding:0 0 3px 0}
+.Dashboard .Header .HeaderLeft ul li.active a,
+.Dashboard .Header .HeaderLeft ul li a:hover{border-color:#fff}
+.Dashboard .Header .HeaderLeft ul li ul{padding:0;border:none}
+.Dashboard .Header .HeaderLeft ul li ul li{display:block;margin:0}
+.Dashboard .Header .HeaderLeft ul li ul li a{color:#000;margin:0;border:none;padding:0;padding:12px 18px;border-radius:0;font-size:14px}
+.Dashboard .Header .HeaderLeft ul li ul li a:hover{background-color:#456ef2;color:#fff}
+
+.Dashboard .Header .HeaderMiddle{display:inline-block;margin:7px 0}
+.Dashboard .Header .HeaderMiddle p{display:inline-block;padding:0;height:auto;margin-left:0;transition:0.5s all ease-in-out;font-weight:500;font-size:16px;color:#fff}
+.Dashboard .Header .HeaderMiddle p span{background-color:#fff;color:#2f5df4;padding:6px 20px;border-radius:50px;margin:0 10px 0 0}
+
+.Dashboard .Header .HeaderRight{float:right}
+.Dashboard .Header .HeaderRight ul{display:flex}
+.Dashboard .Header .HeaderRight ul li{display:inline-block;margin:0 0 0 20px}
+.Dashboard .Header .HeaderRight ul li a img{width:22px}
+.Dashboard .Header .HeaderRight ul li .Avater{margin: 0;position:relative;display:inline-block;padding: 0 30px 0 0;cursor: pointer;}
+.Dashboard .Header .HeaderRight ul li .Avater:before{position:absolute;top:0;font-family:'FontAwesome';content:'\f107';right:0;font-size:26px;color:#fff;line-height:15px}
+.Dashboard .Header .HeaderRight ul li .Avater a{display: block;text-align: left;font-size:14px;color: #fff;}
+.Dashboard .Header .HeaderRight ul li .Avater a figure{width:35px;border-radius:50%;margin:0 15px 0 0;overflow:hidden}
+.Dashboard .Header .HeaderRight ul li .Avater ul{right:0;left:auto;top:100px;border:none;padding:0;margin:0;min-width:200px;opacity:0;visibility:hidden;transition:0.5s all ease-in-out;position:absolute;box-shadow:0 1px 4px #ddd;background-color:#fff;display: block;}
+.Dashboard .Header .HeaderRight ul li .Avater ul li{margin:0;display: block;}
+.Dashboard .Header .HeaderRight ul li .Avater ul li:first-child{background-image: linear-gradient(45deg,#456ef2,#2f4897);position:relative;padding: 10px 21px;text-align:left;border-bottom:1px solid #fff;}
+.Dashboard .Header .HeaderRight ul li .Avater ul li figure{width:35px;height:35px;border-radius:50%;position:absolute;top:15px;left:15px;border:2px solid #fff;overflow:hidden}
+.Dashboard .Header .HeaderRight ul li .Avater ul li h4{color:#fff;font-size: 21px;line-height: 23px;}
+.Dashboard .Header .HeaderRight ul li .Avater ul li h4 span{font-size: 13px;font-weight:400;display: block;}
+.Dashboard .Header .HeaderRight ul li .Avater ul li a{color:#4e4e4e;padding:10px 20px;font-weight:400;transition:0.5s all ease-in-out}
+.Dashboard .Header .HeaderRight ul li .Avater ul li a span{margin:0 10px 0 0}
+.Dashboard .Header .HeaderRight ul li .Avater ul li a:hover{background-color: #456ef2;color:#fff;}
+.Dashboard .Header .HeaderRight ul li .Avater:hover ul{opacity:1;visibility:visible;top:115%}
+
+.Dashboard .Header .HeaderRight ul li .Avater ul li div.Owner{
+    text-align: left;
+    color: #4e4e4e;
+    padding: 10px 20px 4px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    font-style: italic;
+    font-family: Roboto;
+    line-height: 24px;
+}
+
+.Dashboard .Header .HeaderRight ul li .Avater ul li div.Owner span{
+    display: block;
+    font-style: initial;
+    font-weight: 600;
+    color: #000;
+}
+
+
+.SidenavBar{height: calc(100% - 76px);position:fixed;width:235px;top: 76px;padding:0;overflow:auto;box-shadow:0 0 15px rgba(0,0,0,.1);background-color: #2f4897;padding: 40px 0 0 0;}
+.SidenavBar::-webkit-scrollbar-track{background:#bbb;border-radius:0}
+.SidenavBar::-webkit-scrollbar-thumb{background-color: #2f4897;border-radius:0;transition:background-color 0.2s linear,width 0.2s ease-in-out;-webkit-transition:background-color 0.2s linear,width 0.2s ease-in-out;}
+.SidenavBar::-webkit-scrollbar{width:7px;border-radius:0}
+.SidenavBar ul{margin:0}
+.SidenavBar ul li{margin:0}
+.SidenavBar ul li a{display:block;cursor:pointer;padding: 25px 20px 25px 55px;transition:0.5s all ease-in-out;color: #ffffff;font-family:"Roboto";font-size: 17px;text-transform:capitalize;position:relative;font-weight: 400;}
+.SidenavBar ul li a figure{font-size:15px;display:inline-block;position:absolute;top: 19px;left: 0;width: 55px;}
+.SidenavBar ul li.active a,
+.SidenavBar ul li a:hover{background-color: #445ba2;color:#fff;}
+
+.WrapperArea{margin-left:235px;flex:1 1 auto;width:calc(100% - 235px);display:flex;flex-direction:column;margin-top: 76px;transition:0.5s all ease-in-out;}
+.WrapperArea.Full{ margin-left: 0; width: 100% }
+.WrapperArea .WrapperBox{padding:35px;background-color:#f5f6fc;min-height: calc(100vh - 76px);}
+
+ 
+h4.Title{margin:0;font-weight:500;color:#000;text-transform:capitalize;font-size:22px}
+
+.RecordeingHead{border-bottom:2px solid #ddd;padding: 0 0 20px 0;}
+.RecordeingHead h5{margin:7px 0 0 0}
+.RecordeingHead h5 span{color:#000;opacity:.4}
+.RecordeingHead h5 span i{margin:0 5px 0 0}
+.RecordeingHead h5 select{float:right;border:none;background-color:transparent;color:#456ef2;font-family:Roboto;font-weight:400;cursor:pointer}
+.RecordeingHead .RecordeingRight{float:right;margin:-25px 0 0 0;display:flex}
+.RecordeingHead .RecordeingRight select{border:none;background-color:transparent;color:#456ef2;font-family:Roboto;font-weight:400;cursor:pointer;display:inline-block;font-size:15px}
+.RecordeingHead .RecordeingRight ul{display:inline-block;border:1px solid #ddd;border-radius:50px;overflow:hidden;margin:0 10px}
+.RecordeingHead .RecordeingRight ul li{display:inline-block}
+.RecordeingHead .RecordeingRight ul li a{padding:7px 20px;display:block;min-width:130px;text-align:center;background-color:#fff;font-size:14px;color:#000}
+.RecordeingHead .RecordeingRight ul li.active a{background-color:#456ef2;color:#fff}
+.RecordeingHead .RecordeingRight a.New{font-size:15px;color:#000;padding:7px 0}
+.RecordeingHead .RecordeingRight a.New span{width:20px;height:20px;display:inline-block;text-align:center;background-color:#456ef2;color:#fff;border-radius:50%;font-size:16px}
+
+
+.CircleButton{display:block;position:relative;margin-bottom:0;cursor:pointer;font-size:22px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.CircleButton input{position:absolute;opacity:0;cursor:pointer;height:0;width:0}
+.CircleButton .checkmark{position:relative;height:20px;width:20px;background-color:#fff;display:block;border:1px solid #ddd;border-radius:50%}
+.CircleButton:hover input~.checkmark{background-color:#ccc}
+.CircleButton input:checked~.checkmark{background-color:#fff}
+.CircleButton .checkmark:after{content:"";position:absolute;display:none}
+.CircleButton input:checked~.checkmark:after{display:block}
+.CircleButton .checkmark:after{left:0;top:0;width:9px;height:9px;background:#456ef2;right:0;bottom:0;margin:auto;border-radius:50%}
+
+.TableList table{margin:0 0 60px 0}
+.TableList table tr th{padding:20px 10px;background-color:#f5f6fc;font-weight:500;text-transform:capitalize;color:#000;font-size:15px}
+.TableList table tr th:first-child{width:40px}
+.TableList table tr td{padding:20px 10px;font-weight:400;color:#404040;font-size:15px}
+.TableList table tr td:first-child{width:40px}
+.TableList table tr td:first-child input{ border: none; box-shadow: none; outline: 0;}
+.TableList table tr th img{width:25px;margin:0 5px 0 0}
+.TableList table tbody{background-color:#fff;box-shadow:0 3px 10px #ddd}
+.TableList h6{text-align:center;font-size:21px;color:#000;font-weight:400;opacity:.5}
+
+.ProjectArea{margin:20px 0 0 0}
+.ProjectArea ul.ProjectList{  }
+.ProjectArea ul.ProjectList li{margin: 0 20px 0 0;float: left;width: 31%;}
+.ProjectArea aside{padding:20px 30px;background-color:#fff;min-height: 250px;box-shadow:0 7px 10px #ddd;margin: 0 0 20px 0;}
+.ProjectArea aside h4{color:#000;margin:0 0 20px}
+.ProjectArea aside a{display:block;background-color:#ecf0fe;text-align:center;border-radius:12px;padding:8px 0;font-size:13px;color:#456ef2}
+.ProjectArea aside a:hover{background-color:#456ef2;color:#fff}
+
+
+.InviteArea{text-align:center;padding:0}
+.InviteArea figure{width:100px;height:100px;margin:0 auto 20px;border-radius:50%;overflow:hidden}
+.InviteArea h3{color:#000;margin:0 0 10px;font-size:30px}
+.InviteArea p{font-size:19px;line-height:32px;margin:0 0 20px 0}
+.InviteArea .InviteBox{background-color:#fff;padding:30px 60px;width: 85%;margin:0 auto 60px;box-shadow:0 0 10px #ddd;max-width: 1400px;}
+.InviteArea .InviteBox aside{width:86%;margin:0 0 10px 0}
+.InviteArea .InviteBox aside h6{float:right;font-weight:400;color:#636363;font-size:14px}
+.InviteArea .InviteBox aside h6 select{padding:0;border:none;background-color:transparent;color:#000;margin:0 0 0 10px;font-weight:600}
+.InviteArea .InviteBox aside h5{float:left;font-size:15px;color:#000;font-weight:600}
+.InviteArea .InviteBox aside h5 img{width:18px}
+.InviteArea .InviteBox article{display:flex;height:50px;margin:0 0 40px 0}
+.InviteArea .InviteBox article input{width:90%;border:1px solid #ddd;border-radius:5px;padding:0 20px;font-size:15px;font-style:italic;margin:0 10px 0 0}
+.InviteArea .InviteBox article button{width:8%;min-width:120px;background-color:#456ef2;border:none;outline:0;color:#fff;font-size:20px;border-radius:7px}
+.InviteArea .InviteBox a{min-width:150px;background-color:#456ef2;border:none;outline:0;color:#fff;font-size:20px;border-radius:7px;display:inline-block;padding:14px 0}
+.InviteArea h4 a{font-size:15px;color:#000;opacity:.8}
+
+.AccountArea{background-color:#fff;padding:25px 25px 65px 25px;max-width:600px;margin:20px auto;box-shadow:0 2px 10px #ddd}
+.AccountArea .AccountBox{width:70%;margin:auto}
+.AccountArea .AccountBox h3{text-align:center;color:#466ff2;font-size:27px;margin:0 0 30px 0}
+.AccountArea .AccountBox .form-group{position:relative;margin:0 0 26px 0}
+.AccountArea .AccountBox .form-group .form-control{padding:0;border:none;box-shadow:none;border-bottom:1px solid #ddd;border-radius:0;font-size:17px}
+.AccountArea .AccountBox .form-group span{position:absolute;right:0;top:8px;width:20px}
+.AccountArea .AccountBox p{text-align:right;margin:0 0 50px 0}
+.AccountArea .AccountBox p a{padding:10px 20px;display:inline-block;background-color:#ecf0fe;color:#456ef2;border-radius:50px}
+.AccountArea .AccountBox button{width:100%;background-color:#456ef2;border:none;outline:0;padding:13px 0;color:#fff;font-size:19px;border-radius:50px}
+
+.BackButton{font-size:16px;color:#456ef2;opacity:.5;margin-bottom:10px;display:inline-block}
+.BackButton span{width:20px;display:inline-block;transform:rotate(180deg);margin:0 8px 0 0}
+
+.ProjectArea .ProjectName{width:450px;margin:auto}
+.ProjectArea .ProjectName h3{text-align:center;margin:40px 0 26px 0;color:#000;font-size:25px}
+.ProjectArea .ProjectName .form-group .form-control{height:50px;border:none;box-shadow:0 3px 10px #ddd;padding:12px 20px;line-height:26px;font-style:italic}
+.ProjectArea .ProjectName .form-group textarea.form-control{height:auto}
+.ProjectArea .ProjectName button,a.Done{width:150px;background-color:#456ef2;border:none;outline:0;color:#fff;font-size:19px;display:block;padding:14px 0;border-radius:50px;margin:50px auto;text-align:center}
+.ProjectArea .ProjectName .ProjectStart{background-color:#fff;min-height:200px;box-shadow:0 7px 10px #ddd}
+.ProjectArea .ProjectName .ProjectStart article{background:#3a64f4;padding:18px 0;text-align:center;color:#fff}
+.ProjectArea .ProjectName .ProjectStart article h3{color:#fff;font-size:20px;margin:0 0 6px}
+.ProjectArea .ProjectName .ProjectStart article h3 img{filter:brightness(0) invert(1);width:20px}
+.ProjectArea .ProjectName .ProjectStart article h4{font-weight:400;font-size:17px}
+.ProjectArea .ProjectName .ProjectStart ul{padding:40px 30px 40px 50px}
+.ProjectArea .ProjectName .ProjectStart ul li{font-size:15px;margin:0 0 20px 0;position:relative}
+.ProjectArea .ProjectName .ProjectStart ul li:before{content:'';position:absolute;top:7px;left:-20px;width:8px;height:8px;background-color:#456ef2;border-radius:50%;opacity:.5}
+
+.SettingArea{background-color:#fff;padding:35px;border:1px solid #ddd;margin:20px 0 0 0;border-radius:6px;box-shadow:0 6px 7px #ddd}
+.SettingArea .SettingBox{margin:20px 0 20px 0}
+.SettingArea .SettingBox figure{background-color:#ecf0fe;width:130px;height:130px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+.SettingArea .SettingBox figure img{width:70px}
+.SettingArea .SettingBox h5{text-align:center;font-size:19px;color:#000}
+.SettingArea aside{text-align:center;padding:20px 0}
+.SettingArea aside h3{margin:0 0 30px 0;font-weight:500;color:#000;font-size:25px}
+.SettingArea aside p{font-size:18px;opacity:.7;font-weight:300;margin:0 0 50px 0}
+
+.SettingArea aside a{padding:12px 30px;display:inline-block;background-color:#456ef2;color:#fff;font-size:17px;border-radius:7px;font-weight:400}
+.SettingArea article .TableList td a{background:#466ff2;border:none;padding:10px 0;color:#fff;font-size:17px;text-align:center;width:100%;border-radius:0}
+.SettingArea article .TableList p{margin:20px 0 0 0;font-size:16px;line-height:24px}
+.SettingArea article+article{margin:30px 0 0 0;border-top:2px solid #ddd;padding:30px 0 0 0}
+.SettingArea article h5{margin:0 0 10px 0;font-size:18px;color:#000;opacity:.6}
+.SettingArea article table{margin:0}
+.SettingArea article table tr td{font-size:16px;padding:11px 15px}
+.SettingArea article table tr td span{width:40px;height:40px;border-radius:50%;border:2px solid #ddd;text-align:center;font-weight:600;line-height:35px;margin:0 10px 0 0;display:inline-block;font-size:14px}
+.SettingArea article table tr td a{display:inline-block;width:15px}
+
+.CreateProject h3{margin:20px 0 20px 0;font-size:16px;font-weight:400;color:#456ef2}
+.CreateProject aside{background-color:#fff;margin:0 0 30px 0;padding:25px;box-shadow:0 0 6px #ddd}
+.CreateProject aside h5{font-size:17px;color:#000;margin:0 0 10px}
+.CreateProject aside h5 span{font-weight:300}
+.CreateProject aside h5 .Task{float:right}
+.CreateProject aside h5 .Task a{margin:0 0 0 10px;background-color:#ebeffe;padding:10px 20px;font-size:14px;font-weight:400;color:#456ef2}
+.CreateProject aside h5 .Task a:hover{background-color:#456ef2;color:#fff}
+.CreateProject aside h6{margin:0 0 20px 0;font-weight:300;font-size:15px;color:#000;opacity:.8}
+.CreateProject aside .form-control{box-shadow:none;border:none;background-color:#f5f6fc}
+.CreateProject aside div{display:flex}
+.CreateProject aside div span{width:25px;margin:0 10px 0 0;padding:11px 0}
+.CreateProject aside div .form-control{height:50px;width:auto;min-width:400px;border-radius:50px;padding:0 30px}
+.CreateProject .Button,
+.Button{width:180px;display:block;margin:auto;background-color:#456ef2;border:none;padding:10px 0;color:#fff;font-size:22px;border-radius:50px;text-align:center}
+
+.SeftTest{margin:40px 0 50px 0;background-color:#fff;padding:20px;box-shadow:0 0 10px #ddd}
+.SeftTest aside{min-height:56px}
+.SeftTest aside figure{float:left;display:flex;font-size:20px;font-weight:500;align-items:center}
+.SeftTest aside figure span{width:40px;height:40px;background-color:#ebeffe;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 15px 0 0}
+.SeftTest aside figure span img{width:14px}
+.SeftTest aside ul{float:right;display:flex;align-items:center}
+.SeftTest aside ul li{margin:0 0 0 20px}
+.SeftTest aside ul li:nth-child(1) a{font-size:15px}
+.SeftTest aside ul li:nth-child(1) a img{width:21px;margin:-3px 10px 0 0}
+.SeftTest aside ul li:nth-child(2){border-left:1px solid #ddd;padding:0 0 0 20px}
+.SeftTest aside ul li:nth-child(2) a{padding:10px 20px;background-color:#f5f6fc;color:#000;display:block;border-radius:50px;font-size:15px;font-weight:500}
+.SeftTest aside ul li:nth-child(3) a img{width:5px}
+.SeftTest h6{text-align:center;font-size:16px;font-weight:300;color:#000;padding:60px 0;border:1px solid #ddd;border-left:none;border-right:none;opacity:.9}
+.SeftTest p.Last{margin:10px 0 0 0;font-size:15px;opacity:.7;color:#000}
+.SeftTest+h5{text-align:center;font-size:21px;color:#000;font-weight:400;opacity:.5}
+ 
+.VideoArea{ background-color: #edeff8;  min-height: calc(100vh - 76px); }
+.VideoArea img{ width: 90%; margin: auto; display: block; }
+.VideoArea video{width: 70%; margin: auto; display: block; outline: 0}
+
+
+.InterviewArea{
+    width: 90%;
+    margin: auto;
+    padding: 40px 0 20px;
+}
+
+.InterviewArea h2{
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 30px 0;
+}
+
+.InterviewArea h4{
+    margin: 0 0 15px 0;
+    color: #456ef2;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.InterviewArea aside{
+    background-color: #fff;
+    padding: 25px;
+    margin: 0 0 25px 0;
+}
+
+.InterviewArea aside .form-group{
+    margin: 0 0 20px 0;
+}
+
+.InterviewArea aside .form-group h6{
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+
+.InterviewArea aside .form-group .form-control{box-shadow: none;border: none;background-color: #f5f6fc;height: 45px;border-radius: 0;width: 200px;font-size: 21px;font-weight: 400;color: #000;}
+
+.InterviewArea aside .form-group ul{
+    margin: 0;
+}
+.InterviewArea aside .form-group ul li{
+    display: inline-block;
+    width: 15%;
+}
+.InterviewArea aside .form-group ul li label{padding:0 0 0 30px;font-size:14px;font-weight: 500;color:#000;}
+.InterviewArea aside .form-group ul li label.CircleButton .checkmark{display:inline-block;position:absolute;left:0}
+.InterviewArea aside .form-group ul li label.CircleButton input:checked~.checkmark{background-color:#456ef2;border-color:#456ef2}
+.InterviewArea aside .form-group ul li label.CircleButton input:checked~.checkmark:after{background-color:#fff}
+
+.InterviewArea aside p{
+    font-style: italic;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    opacity: .5;
+}
+
+.InterviewArea aside .form-group textarea.form-control{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    font-size: 14px;
+}
+
+
+.InterviewArea aside .form-group .File{
+    background-color: #ebeffe;
+    padding: 10px 24px;
+    position: relative;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.InterviewArea aside .form-group .File i{
+    color: #456ef2;
+    margin: 0 5px 0 0;
+    font-size: 20px;
+}
+
+.InterviewArea aside .form-group .File span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.InterviewArea aside .form-group .File input{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.InterviewArea aside .form-group .PriceSlider{
+    padding: 0 20px 15px;
+}
+
+.InterviewArea aside .form-group .PriceSlider #min_price{
+    text-align: left;
+    border: none;
+    outline: 0;
+    font-weight: 600;
+    font-size: 17px;
+}
+.InterviewArea aside .form-group .PriceSlider #max_price{
+    float: right;
+    text-align: right;
+    border: none;
+    outline: 0;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.InterviewArea aside .form-group .PriceSlider #slider-range{
+    height: 11px;
+    margin: 10px 0 0 0;
+    border-radius: 50px;
+}
+
+.InterviewArea aside .form-group .PriceSlider #slider-range .ui-slider-range{
+    background-color: #456ef2;
+}
+
+.InterviewArea aside .form-group .PriceSlider #slider-range span{
+    background: #ffffff;
+    border-radius: 50%;
+    border: none;
+    outline: 0;
+    box-shadow: 0px 3px 5px #ddd;
+}
+
+.InterviewArea aside button{
+    width: 180px;
+    border: none;
+    padding: 12px 0;
+    border-radius: 50px;
+    background-color: #456ef2;
+    margin: 30px auto 15px;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+.VerificationArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     min-height: 70vh; 
+}
+
+.VerificationArea article{
+    text-align: center;
+}
+
+.VerificationArea article img{
+    width: 90px;
+}
+
+.VerificationArea article h3{
+    font-size: 26px;
+    font-weight: 600;
+    margin: 20px 0 20px 0;
+}
+
+.VerificationArea article aside{
+    background-color: #fff;
+    padding: 35px;
+    box-shadow: 0px 0px 10px #ddd; 
+    border-radius: 10px;
+}
+
+.VerificationArea article aside h4{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.VerificationArea article aside p{
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0 0 14px 0;
+    opacity: 0.7;
+}
+
+.VerificationArea article aside a{
+    font-size: 17px;
+    color: #456ef2;
+    text-decoration: underline;
+}
+
+
+
+.VideoContent{
+    padding: 30px 0 30px 0;
+}
+
+.VideoContent .VideoContentLeft{}
+
+.VideoContent .VideoContentLeft aside{
+    margin: 0 0 30px 0;
+}
+
+.VideoContent .VideoContentLeft aside ul{
+    float: right;
+}
+
+.VideoContent .VideoContentLeft aside ul li{
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+
+.VideoContent .VideoContentLeft aside ul li a{
+    display: block;
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+}
+
+.VideoContent .VideoContentLeft aside ul li a span{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #edeff8;
+    padding: 5px;
+    margin: 0 6px 0 0;
+}
+
+.VideoContent .VideoContentLeft aside ul li a span img{
+    filter: brightness(0);
+}
+
+.VideoContent .VideoContentLeft aside h3{
+    font-size: 20px;
+}
+
+.VideoContent .VideoContentLeft aside p{
+    font-size: 14px;
+    margin: 10px 0 -10px 0;
+    color: #000;
+    opacity: 0.7;
+}
+
+.VideoContent .VideoContentLeft aside .form-control{
+    border: none;
+    box-shadow: none;
+    background-color: #f3f3f3;
+    resize: none;
+    border-radius: 0px;
+    padding: 15px 15px;
+    color: #000;
+    font-size: 15px;
+}
+
+.VideoContent .VideoContentLeft article{}
+
+.VideoContent .VideoContentLeft article h1{
+    font-size: 22px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 10px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.VideoContent .VideoContentLeft article h1 span{
+    width: 25px;
+    height: 25px;
+    background-color: #ecf0fe;
+    color: #456ef2;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.VideoContent .VideoContentLeft article h1 img{}
+
+.VideoContent .VideoContentLeft article h2{
+    text-align: center;
+}
+
+.VideoContent .VideoContentLeft article h2 span{
+    background-color: #ecf0fe;
+    color: #456ef2;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    padding: 3px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.VideoContent .VideoContentLeft article h2 span img{
+    width: 15px;
+}
+
+.VideoContent .VideoContentLeft article ul{
+    padding: 30px 0 0 0;
+}
+
+.VideoContent .VideoContentLeft article ul li:before{
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 25px;
+    width: 1px;
+    height: 340px;
+    background: #ecf0fe;
+}
+
+.VideoContent .VideoContentLeft article ul li{
+    position: relative;
+    padding: 0 0 0 80px;
+    margin: 0 0 30px 0;
+}
+
+.VideoContent .VideoContentLeft article ul li span.Icon{
+    width: 50px;
+    height: 50px;
+    background-color: #ecf0fe;
+    color: #456ef2;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.VideoContent .VideoContentLeft article ul li .Comment{
+    background-color: #f3f3f3;
+    padding: 20px 20px;
+    color: #000;
+    font-size: 15px;
+    border-radius: 6px;
+    min-height: 115px;
+}
+
+.VideoContent .VideoContentLeft article ul li .Comment h6{
+    float: right;
+}
+
+.VideoContent .VideoContentLeft article ul li .Comment h6 a{
+    margin: 0 0 0 10px;
+    filter: brightness(0);
+    opacity: 0.5;
+}
+
+.VideoContent .VideoContentLeft article ul li .Comment h6 a img{}
+
+.VideoContent .VideoContentLeft article ul li .Comment h6 span{
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    opacity: 0.5;
+}
+
+.VideoContent .VideoContentLeft article ul li .Comment h3{
+    margin: 0 0 10px 0;
+    font-size: 19px;
+    font-weight: 500;
+    color: #000;
+}
+
+.VideoContent .VideoContentLeft article ul li .Comment p{
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.VideoContent .VideoContentLeft article ul p.Mentions{
+    float: left;
+    margin: 0 0 0 80px;
+    font-size: 15px;
+    color: #000;
+}
+
+.VideoContent .VideoContentLeft article ul li .TextCommit{
+    background: transparent;
+    min-height: auto;
+    padding: 0;
+}
+
+
+
+.VideoContent .VideoContentLeft article ul button{background-color:#456ef2;border:none;outline:0;padding: 12px 35px;color:#fff;font-size: 17px;margin-left: auto;display:block;border-radius: 5px;}
+
+
+
+
+
+
+
+.VideoContent .VideoContentRight{
+    padding: 0 0 0 10px;
+}
+
+.VideoContent .VideoContentRight h1{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 6px 0;
+}
+
+.VideoContent .VideoContentRight h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    margin: 0 0 7px;
+}
+
+.VideoContent .VideoContentRight h3{
+    margin: 0 0 30px 0;
+    font-size: 16px;
+}
+
+.VideoContent .VideoContentRight h3 a{}
+
+.VideoContent .VideoContentRight ul{
+    margin: 0 0 30px 0;
+}
+
+.VideoContent .VideoContentRight ul li{margin: 0 0 20px 0;}
+
+.VideoContent .VideoContentRight ul li a{
+    padding: 16px 10px;
+    display: block;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: #3360f4;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #3360f4;
+    color: #fff;
+}
+
+.VideoContent .VideoContentRight ul li a i{
+    margin: 0 0 0 10px;
+}
+
+.VideoContent .VideoContentRight ul li:first-child a{
+    background-color: #ecf0fe;
+    color: #3360f4;
+}
+
+.VideoContent .VideoContentRight ul li:first-child a:hover{
+    background-color: #3360f4;
+    color: #ffffff;
+}
+
+
+.VideoContent .VideoContentRight label{padding:0 0 0 30px;font-size: 16px;font-weight: 500;color:#000;margin: 0 0 30px 0;}
+.VideoContent .VideoContentRight label.CircleButton .checkmark{display:inline-block;position:absolute;left:0;top: 0;}
+.VideoContent .VideoContentRight label.CircleButton input:checked~.checkmark{background-color:#456ef2;border-color:#456ef2}
+.VideoContent .VideoContentRight label.CircleButton input:checked~.checkmark:after{background-color:#fff}
+
+
+.VideoContent .VideoContentRight h4{
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.VideoContent .VideoContentRight h6{
+    text-transform: uppercase;
+    font-size: 21px;
+    margin: 0 0 10px;
+}
+
+.VideoContent .VideoContentRight h5{
+    color: #446df2;
+    margin: 0 0 40px 0px;
+}
+
+.VideoContent .VideoContentRight h5 img{
+    width: 25px;
+    margin: 0 10px 0 0;
+}
+
+
+
+.VideoContent .VideoContentRight ol{}
+
+.VideoContent .VideoContentRight ol li{
+    margin: 0 0 5px 0;
+}
+
+.VideoContent .VideoContentRight ol li a{
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+.ModalBox .modal-dialog{max-width:600px;margin:50px auto} 
+.ModalBox .modal-dialog .modal-content{ border-radius: 0; box-shadow: none; }
+.ModalBox .modal-dialog .CloseModal{position:absolute;top:-13px;right:-13px;width:26px;height:26px;background-color:#fff;border:2px solid rgba(0,0,0,.5);text-align:center;color:#000;font-size:15px;border-radius:50%}
+.ModalBox .modal-dialog .Category{ padding: 25px }
+.ModalBox .modal-dialog .Category h3{text-align:center;font-weight:600;margin:0 0 20px 0;font-size: 20px;}
+.ModalBox .modal-dialog .Category .form-group{margin:0 0 20px;position:relative;padding: 0 0px;}
+.ModalBox .modal-dialog .Category .form-group label{display:block;font-weight:500;color:#000;font-size:15px;font-family:"Roboto"}
+.ModalBox .modal-dialog .Category .form-group .form-control{height: 40px;color:#000;line-height:22px;padding: 0;border: none;box-shadow: none;border-bottom: 2px solid #ddd;border-radius: 0;font-size: 17px;}
+.ModalBox .modal-dialog .Category .form-group textarea.form-control{height:auto}
+.ModalBox .modal-dialog .Category p{font-size:14px;color:#000;opacity:.7;font-style:italic;margin:0 0 15px 0}
+.ModalBox .modal-dialog .Category button{width:50%;background-color:#456ef2;border:none;outline:0;padding:13px 0;color:#fff;font-size:19px;border-radius:50px;margin:auto;display:block}
+.ModalBox .modal-dialog .ShareLink{text-align:center;padding:40px 0}
+.ModalBox .modal-dialog .ShareLink h5{font-size:20px;margin:0 0 10px 0}
+.ModalBox .modal-dialog .ShareLink h6{font-size:15px;color:#000;opacity:.5;font-weight:400;line-height:24px}
+.ModalBox .modal-dialog .ShareLink ul{margin:40px 0 50px 0}
+.ModalBox .modal-dialog .ShareLink ul li{display:inline-block;margin:0 15px}
+.ModalBox .modal-dialog .ShareLink ul li label{padding:0 0 0 30px;font-size:14px;font-weight:400;color:#000}
+.ModalBox .modal-dialog .ShareLink ul li label a{ color: #000}
+.ModalBox .modal-dialog .ShareLink ul li label .checkmark{display:inline-block;position:absolute;left:0}
+.ModalBox .modal-dialog .ShareLink ul li label.CircleButton input:checked~.checkmark{background-color:#456ef2;border-color:#456ef2}
+.ModalBox .modal-dialog .ShareLink ul li label.CircleButton input:checked~.checkmark:after{background-color:#fff}
+.ModalBox .modal-dialog .ShareLink .Link{background-color:#ebeffe;border-radius:50px;padding:10px 0;text-align:center;position:relative;margin:35px auto 20px;width:90%}
+.ModalBox .modal-dialog .ShareLink input{width:200px;background-color:#f5f6fc;margin:20px 0 20px 0;border:none;outline:0;box-shadow:none;font-size:22px;font-weight:500;padding:10px 17px}
+.ModalBox .modal-dialog .ShareLink .Link p{font-size:15px;color:#456ef2}
+.ModalBox .modal-dialog .ShareLink .Link img{position:absolute;right:20px;top:10px;width:16px}
+.ModalBox .modal-dialog .ShareLink ol{margin:30px 0 0 0}
+.ModalBox .modal-dialog .ShareLink ol li{margin:0 0 15px 0}
+.ModalBox .modal-dialog .ShareLink ol li a{width:180px;display:block;margin:auto;background-color:#e3eafd;border:none;padding:13px 0;color:#456ef2;font-size:19px;border-radius:50px;text-align:center}
+.ModalBox .modal-dialog .ShareLink ol li:first-child a{background-color:#456ef2;color:#fff}
+.ModalBox .modal-dialog .ShareLink .Button{padding:10px 0;font-size:18px;width:149px}
+.ModalBox .modal-dialog .ShareLink .Button:hover{color:#fff}
+
+
+
+
+
+
+@media screen and (max-width: 2000px) and (min-width: 1600px) {
+
+    .ProjectArea ul.ProjectList li{width:23%}
+    .Header .navbar{max-width:1500px}
+    .container{width:1330px}
+    .KnowArea .KnowLeft{padding:150px 0 50px 100px;margin:0 -100px 0 0}
+    .KnowArea .KnowLeft h3{font-size:65px}
+    .KnowArea .KnowLeft p{font-size:30px}
+    .KnowArea .KnowLeft a{padding:15px 50px;font-size:21px}
+    .KnowArea .KnowRight img{width:80%;margin-left:auto;display:block}
+    .SidenavBar ul li a{padding:25px 20px 25px 65px;font-size:20px}
+    .SidenavBar ul li a figure{left:10px}
+    
+}
